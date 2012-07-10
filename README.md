@@ -6,17 +6,17 @@ Because App Cloud is built on top of web technologies, integrating Double Click 
 What you need
 =============
 
-* The embed code retrieved from [https://www.google.com/dfp/]DFP for this Ad Unit.
+* The embed code retrieved from [DFP](https://www.google.com/dfp/) for this Ad Unit.
   * This embed code should have a target platform of "mobile". 
-  * The embed code should have type of "Site" rather then "Application".
-  * This can be any size you want, but we using a 320x50 ad for this example.
-* Access to your App Cloud application code base or ability to run scaffolding script.
-* Workshop installed on a smart phone to test the application.
+  * The embed code should have type of "Site" **NOT** "Application".
+  * This can be any size you want, but we are using a 320x50 ad for this example.
+* Access to your App Cloud application code base or ability to run the scaffolding script.  See [Getting started](http://support.brightcove.com/en/docs/getting-started-app-cloud) for details.
+* Workshop installed on either an Android or iOS device.
 
 Integration
 =============
 
-Open the HTML file for each view for which you would like to serve an ad and paste the script tag provided by DFP for your header into the header.  In our example code the script tags look like:
+Open the HTML file for each view that you would like to serve an ad within.  Paste the script tag provided by DFP for your header into the header of the HTML file.  (In our example code this is found at the top of example.html file.)  In our example code the script tags look like this:
 
     <script type='text/javascript'>
     (function() {
@@ -52,5 +52,7 @@ With in your HTML page decide where you would like to place your ad unit and pas
 
 Screenshot
 ============
+Below you can see a screenshot of the example running in the workshop, serving a good old Henderson Ginger Ale ad.  (If you have used Brightcove before you will be familar with Hendersons Ginger Ale, if not you should know that its the ginger ale "for when it really matters.")
+
 
 ![Screenshot](https://dl.dropbox.com/u/9478378/ad-example.png)
