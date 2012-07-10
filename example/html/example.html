@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="bc-manifest" content="../manifest.json" />
+    <title>example</title>
+    <link rel="stylesheet" href="../stylesheets/theme-1.10.2.css" />
+    <link rel="stylesheet" href="../stylesheets/example.css" />
+    <script type="text/javascript" src="../javascripts/lib/brightcove-app-cloud-1.10.2.js"></script>
+    <script type="text/javascript" src="../javascripts/views/example.js"></script>
+    <script type='text/javascript'>
+    (function() {
+    var useSSL = 'https:' == document.location.protocol;
+    var src = (useSSL ? 'https:' : 'http:') +
+    '//www.googletagservices.com/tag/js/gpt_mobile.js';
+    document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+    })();
+    </script>
+    <script type='text/javascript'>
+    googletag.cmd.push(function() {
+    googletag.defineSlot('/6390/App-Cloud-Example', [320, 50], 'div-gpt-ad-1341928694885-0').addService(googletag.pubads());
+    googletag.enableServices();
+    });
+    </script>
+  </head>
+  <body>
+    <!-- Our fixed header.  To change the background image check out the theme.css file -->
+    <header class="fixed-header-container">
+      <div class="fixed-header-theme">
+        <div class="logo"></div>
+      </div>
+    </header>
+    
+    <!-- Initial page -->
+    <section id="pageone" class="page">
+      <header class="header">
+        <!-- Any custom buttons to show in the header that is specific to this page go here.-->
+      </header>
+      <!-- App-Cloud-DFP-Example -->
+      <div id='div-gpt-ad-1341928694885-0'>
+      <script type='text/javascript'>
+      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1341928694885-0')});
+      </script>
+      </div>
+      <div class="scroller">
+        <div id="first-page-content" class="content">
+          <!-- Your content for the first page goes here.  We will set this via the example.js file. -->
+        </div>
+      </div>
+    </section>
+    
+    <!-- Second page -->
+    <section id="pagetwo" class="page">
+      <header class="header">
+        <div class="back-button"></div>
+      </header>
+      <div class="scroller">
+        <div id="second-page-content" class="content">
+          <!-- Your content for the second page goes here.  We will set this via the example.js file. -->
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
