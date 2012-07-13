@@ -35,20 +35,11 @@ Open the HTML file for each view that you would like to serve an ad within.  Pas
 
 With in your HTML page decide where you would like to place your ad unit and paste the code snippet provided by DFP for your document body into it.  In our example we paste the code below between the header and the scrollable area.
 
-    <script type='text/javascript'>
-    (function() {
-    var useSSL = 'https:' == document.location.protocol;
-    var src = (useSSL ? 'https:' : 'http:') +
-    '//www.googletagservices.com/tag/js/gpt_mobile.js';
-    document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
-    })();
-    </script>
-    <script type='text/javascript'>
-    googletag.cmd.push(function() {
-    googletag.defineSlot('/6390/App-Cloud-Example', [320, 50], 'div-gpt-ad-1341933272661-0').addService(googletag.pubads());
-    googletag.enableServices();
-    });
-    </script>
+    <div id='div-gpt-ad-1341928694885-0'>
+      <script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('div-gpt-ad-1341928694885-0')});
+      </script>
+    </div>
 
 Screenshot
 ============
